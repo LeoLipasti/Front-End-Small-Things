@@ -1,0 +1,38 @@
+#search {
+    position: absolute;
+    left: calc(50vw + 35px);
+    top: 150px;
+    z-index: 50;
+    box-shadow: 2.5px 5px 2px #1b3a6b;
+}
+
+input {
+    width: 225px;
+    height: 30px;
+    font-size: 16px;
+    padding: 5px;
+    border-width: 1.5px;
+    font-family: monospace;
+}
+
+#searchlist {
+    width: 225px;
+    top: 30px;
+}
+
+.result {
+    background-color: white;
+    width: 225px;
+    height: 30px;
+    margin-top: -1.5px;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: lightgrey lightgrey grey grey;
+    font-size: 16px;
+    padding: 5px;
+    font-family: monospace;
+}
+
+.result.on {
+    background-color: gainsboro;
+}

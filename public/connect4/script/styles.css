@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    user-select: none;
+}
+
+#board {
+    display: grid;
+    position: absolute;
+    width: calc(75px * 7);
+    height: calc(70px * 6);
+    grid-template-rows: 75px;
+    grid-auto-flow: column;
+    margin-left: 15%;
+    margin-top: 8%;
+}
+#pucks {
+    display: grid;
+    position: absolute;
+    width: calc(75px * 7);
+    height: calc(70px * 6);
+    grid-template-rows: 75px;
+    grid-auto-flow: column;
+    margin-left: 15%;
+    margin-top: 8%;
+}
+
+.puck {
+    margin: 0;
+    width: 70px;
+    height: 70px;
+    margin-top: 8px;
+    font-family: "Righteous", cursive;
+    font-size: 50px;
+    text-align: center;
+}
+
+.animatepuck {
+    margin-top: 15px;
+    transition: margin 180ms;
+}
+
+.red {
+    color: red;
+    z-index: -1;
+    background-image: url("../images/red.jpg");
+    background-position: bottom;
+}
+
+.yellow {
+    color: yellow;
+    z-index: -1;
+    background-image: url("../images/yellow.jpg");
+    background-position: bottom;
+}
+
+.slot {
+    margin: 0;
+    width: 70px;
+    height: 70px;
+    font-family: "Righteous", cursive;
+    font-size: 60px;
+    color: orange;
+    text-align: center;
+}
+
+.slot.hilityellow {
+    color: gold;
+}
+.slot.hilitred {
+    color: orangered;
+}
+
+.sel {
+    color: white;
+}
+
+#tinyinformatic {
+    width: 35px;
+    height: 35px;
+    font-family: "Righteous", cursive;
+    font-size: 30px;
+}

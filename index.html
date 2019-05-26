@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/index_style/style.css" />
+        <link rel="stylesheet" href="/incremental_search/style.css" />
+        <link rel="stylesheet" href="/panes/style.css" />
+        <title>Leo Lipasti - Front End - Small things</title>
+    </head>
+    <body>
+        <div id="container">
+            <div id="frame1" class="frames">
+                <img
+                    src="/index_style/bg/portfolioframe_down.jpg"
+                    class="down"
+                />
+                <img src="/index_style/bg/portfolioframe_up.jpg" class="up" />
+                <img
+                    src="/index_style/bg/portfolioframe_left.jpg"
+                    class="left"
+                />
+                <img
+                    src="/index_style/bg/portfolioframe_right.jpg"
+                    class="right"
+                />
+            </div>
+        </div>
+        <div id="search">
+            <input type="text" name="countryinput" />
+            <div id="searchlist"></div>
+        </div>
+        <div id="imagecontainer">
+            <div class="top">
+                <img src="/panes/image1.jpg" draggable="false" />
+            </div>
+            <div class="bottom">
+                <img src="/panes/image2.jpg" draggable="false" />
+            </div>
+            <div class="bar"></div>
+        </div>
+        <div id="gihubsrc">
+            <a href="/github/">
+                <img src="/github/githubscr.png" width="280px" height="185px" />
+            </a>
+        </div>
+        <div id="connect4src">
+            <a href="/connect4/">
+                <img
+                    src="/connect4/connect4scr.png"
+                    width="280px"
+                    height="185px"
+                />
+            </a>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="/index_style/index-styling.js"></script>
+        <script src="/incremental_search/script.js"></script>
+        <script src="/panes/script.js"></script>
+    </body>
+</html>

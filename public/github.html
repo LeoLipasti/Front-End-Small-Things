@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <link rel="stylesheet" href="/github/styles.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto"
+            rel="stylesheet"
+        />
+        <meta charset="utf-8" />
+        <title></title>
+    </head>
+    <body>
+        <h1>Github search</h1>
+        <form>
+            <input
+                name="username"
+                type="text"
+                placeholder="username"
+                autocomplete="off"
+            />
+            <input
+                name="password"
+                type="password"
+                placeholder="password"
+                autocomplete="off"
+            />
+            <input
+                name="user-to-search"
+                type="text"
+                placeholder="search"
+                autocomplete="on"
+            />
+            <button id="gobutton">go</button>
+        </form>
+        <div id="resultsdiv"></div>
+        <script id="githubber" type="text/x-handlebars-template">
+            {{#commitsArray}}
+            <div class="container">
+                <img src={{ avatar }}>
+                <div class="reponame">{{ reponame }}</div>
+                <div class="repodescription">{{ repodescription }}</div>
+                <div class="more" id={{ targetmore }}>Commits</div>
+            </div>
+            <div id={{ targetdiv }}></div>
+            {{/commitsArray}}
+        </script>
+        <script id="commits" type="text/x-handlebars-template">
+            {{#commitsDetailArray}}
+            <div class="smallcontainer">
+                <img src={{ smallavatar }}>
+                <div class="committer">{{ committer }}</div>
+                <div class="commit">{{ commitdate }}<br>{{ commit }}</div>
+            </div>
+            {{/commitsDetailArray}}
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="/github/script.js"></script>
+    </body>
+</html>
